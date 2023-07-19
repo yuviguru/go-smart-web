@@ -1,6 +1,6 @@
 import React, { useState, setState } from 'react';
 import { Link } from "@reach/router";
-import GoSmartLogo from '../svg/GoSmartLogo.svg'
+import GoSmartLogo from '../svg/logo.svg'
 import "../styles/navigation.scss"
 
 export default function NavigationBar() {
