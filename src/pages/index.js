@@ -1,6 +1,8 @@
 import * as React from "react";
 import "../styles/global.scss";
 import { Router } from "@reach/router";
+import Home from "../components/HomeSection";
+
 
 const Contact = React.lazy(()=>import('../components/ContactSection'));
 const About = React.lazy(()=>import('../components/AboutSection'));
@@ -13,17 +15,11 @@ const LazyComponent = ({ Component, ...props }) => (
 )
 
 
-
-const Home = () => {
-  return (<div className="container">
-  </div>);
-};
-
 const IndexPage = () => {
   return (
-  <div>
+  <div className="body-container">
     <NavigationBar/>
-    <Router>
+    <Router className="page-container">
       <Home path="/" />
       <LazyComponent Component={Contact} path="contact" />
       <LazyComponent Component={About} path="about-us" />

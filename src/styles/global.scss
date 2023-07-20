@@ -9,7 +9,13 @@ $navbar-item-hover-color:  linear-gradient(108.54deg, #FF2A9B -12.56%, #B82AD7 1
 
 @import "~bulma/bulma.sass";
 
-
+html,
 body {
-    padding: 0px 100px;
+  margin: 0;
+//   overflow: hidden;
+}
+
+.page-container {
+    display: flex;
+    margin: auto;
 }

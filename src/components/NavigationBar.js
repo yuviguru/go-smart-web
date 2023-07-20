@@ -1,15 +1,15 @@
 import React, { useState, setState } from 'react';
 import { Link } from "@reach/router";
-import GoSmartLogo from '../svg/logo.svg'
-import "../styles/navigation.scss"
+import { StaticImage } from "gatsby-plugin-image";
+import "../styles/navigation.scss";
 
 export default function NavigationBar() {
   const [showNavBurger, setshowNavBurger] = useState(0);
   return (
-    <nav className="navbar" role="navigation" aria-label="main navigation">
+    <nav className="navbar container is-fullhd" role="navigation" aria-label="main navigation">
     <div className="navbar-brand">
       <a className="navbar-item" href="https://bulma.io">
-        <GoSmartLogo width="112" height="28" alt=""/>
+        <StaticImage src="../svg/logo.svg" alt="GoSmart" />
       </a>
   
       <a role="button" className={`navbar-burger ${showNavBurger ? 'is-active' : ''}`} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onClick={() => { setshowNavBurger(showNavBurger ? 0 : 1) }}>
