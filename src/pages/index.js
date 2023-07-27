@@ -7,6 +7,7 @@ import Home from "../components/HomeSection";
 const Contact = React.lazy(()=>import('../components/ContactSection'));
 const About = React.lazy(()=>import('../components/AboutSection'));
 const NavigationBar = React.lazy(()=>import('../components/NavigationBar'));
+const Courses = React.lazy(()=>import('../components/CourseSection'));
 
 const LazyComponent = ({ Component, ...props }) => (
   <React.Suspense fallback={'<p>Loading...</p>'}>
@@ -19,15 +20,22 @@ const IndexPage = () => {
   return (
   <div className="body-container">
     <NavigationBar/>
-    <Router className="page-container">
-      <Home path="/" />
-      <LazyComponent Component={Contact} path="contact" />
-      <LazyComponent Component={About} path="about-us" />
-    </Router>
+    <div className="page-container">
+      <Home />
+      <About />
+      <Courses />
+      <Contact />
+    </div>
   </div>
   );
 }
 
-export const Head = () => <title>Go Smart - Home</title>
+export const Head = () => (
+  <>
+    <title>Go Smart - Home</title>
+    <body className="has-navbar-fixed-top" />
+  </>
+)
+
 
 export default IndexPage

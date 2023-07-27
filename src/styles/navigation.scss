@@ -54,3 +54,9 @@
       pointer-events: auto;
     }
   }
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    height: 3.25rem;
+  }
+}

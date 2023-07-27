@@ -6,7 +6,7 @@ import "../styles/navigation.scss";
 export default function NavigationBar() {
   const [showNavBurger, setshowNavBurger] = useState(0);
   return (
-    <nav className="navbar container is-fullhd" role="navigation" aria-label="main navigation">
+    <nav className="navbar container is-fixed-top is-fullhd" role="navigation" aria-label="main navigation">
     <div className="navbar-brand">
       <a className="navbar-item" href="https://bulma.io">
         <StaticImage src="../svg/logo.svg" alt="GoSmart" />

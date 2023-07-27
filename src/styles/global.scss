@@ -16,6 +16,21 @@ body {
 }
 
 .page-container {
+  section {
     display: flex;
     margin: auto;
+    flex-direction: column;
+
+    .section-title {
+      color: #000000;
+      margin-bottom: 6rem;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    section {
+      height: calc(100vh - 3.25rem);
+    }
+  }
 }
+
+

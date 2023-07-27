@@ -1,11 +1,11 @@
 .body-container_home {
     background: linear-gradient(128.15deg, rgba(245, 198, 236, 0.77) 9.41%, rgba(255, 157, 157, 0.5) 144.94%);
     margin: 5rem auto;
-    padding: 5rem;
+    padding: 6rem;
     border-radius: 50px 50px 300px 50px;
 
     .body-content_home {
-        width: 50%;
+        width: 60%;
         .body-content_title {
             font-family: Roboto;
             font-size: 40px;
@@ -44,7 +44,7 @@
 
 #bannerImage {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    top: -30px;
+    right: -80px;
 }
 

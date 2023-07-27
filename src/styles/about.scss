@@ -1,0 +1,60 @@
+.body-container_about {
+    margin:  auto;
+    
+    .about-us-image {
+        position: absolute;
+        left: -85px;
+    }
+
+    .tile {
+        min-height: 65%;
+    }
+
+    .tile.is-horizontal {
+        padding: 0 6rem;
+    }
+
+    .tile.is-parent {
+        padding: 0.75rem 3rem;
+
+        &:nth-child(1) .is-child {
+            background: #F5C6EC;
+        }
+        &:nth-child(2) .is-child {
+            background: #F8FFDC;
+        }
+        &:nth-child(3) .is-child {
+            background: #FFEAEA;
+        }
+    }
+
+    .tile.is-child {
+        position: relative;
+        text-align: center;
+        display: inline-block;
+        margin: 20px auto 10px;
+        
+        &:before,
+        &:after {
+          background: #656565BF;
+          box-shadow: 0 1px 3px rgba(0,0,0,.4);
+          content: "";
+          display: block;
+          height: 10px;
+          position: absolute;
+          margin: auto;
+          width: 60px;
+        }
+        &:before {
+            left: -22px;
+            top: 10px;
+            transform: rotate(-45deg);
+        }
+        
+        &:after {
+            bottom: 10px;
+            right: -22px;
+            transform: rotate(-45deg);
+        }
+    }
+}
