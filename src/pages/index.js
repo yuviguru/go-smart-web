@@ -1,7 +1,7 @@
-import * as React from "react";
+import React, { useEffect } from "react";
 import "../styles/global.scss";
-import { Router } from "@reach/router";
 import Home from "../components/HomeSection";
+import smoothscroll from "smoothscroll-polyfill";
 
 
 const Contact = React.lazy(()=>import('../components/ContactSection'));
@@ -17,6 +17,9 @@ const LazyComponent = ({ Component, ...props }) => (
 
 
 const IndexPage = () => {
+  useEffect(() => {
+    smoothscroll.polyfill();
+  }, []);
   return (
   <div className="body-container">
     <NavigationBar/>

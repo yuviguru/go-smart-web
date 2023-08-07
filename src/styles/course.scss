@@ -1,0 +1,52 @@
+.body-container_course {
+    background: #FFEAEA80;
+    margin: 5rem auto;
+    padding: 6rem;
+    border-radius: 50px;
+
+    .body-content_course {
+        .body-content_title {
+            font-family: Roboto;
+            font-size: 40px;
+            font-weight: 800;
+            line-height: 60px;
+            letter-spacing: 0.31em;
+            text-align: left;
+            
+            font-family: Roboto;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 60px;
+            letter-spacing: 0.31em;
+            text-align: left;  
+            margin-bottom: 1rem;           
+        }
+        .body-content_description{
+            font-family: Work Sans;
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 26px;
+            letter-spacing: 0.25em;
+            text-align: left;
+            margin-bottom: 2rem; 
+        }
+        .button {
+            padding: 8px 28px 8px 28px;
+            border-radius: 100px;
+            border: 1px;
+            gap: 8px;
+            background: linear-gradient(99.05deg, #B82AD7 0.07%, #FF2A9B 106.32%);
+            color: #ffffff;
+        }
+    }
+    .courses-slider {
+        align-self: center;
+    }
+}
+
+#bannerImage {
+    position: absolute;
+    top: -30px;
+    right: -80px;
+}
+
