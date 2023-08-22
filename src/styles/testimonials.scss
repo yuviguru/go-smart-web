@@ -1,0 +1,67 @@
+.body-container_testimonial {
+    margin:  auto;
+    background: url('../images/bg-letters.png');
+    background-size: contain;
+    .tile.is-ancestor {
+        margin-top: 8rem;
+    }
+
+    .tile.is-horizontal {
+        padding: 0 1rem;
+    }
+
+    .tile.is-parent {
+        padding: 0.75rem 4rem;
+        position: relative;
+
+        &:nth-child(1) {
+            top: 1rem;
+            .is-child {
+                background: #F5C6EC;
+                transform: rotate(357deg);
+                margin-top: 1rem;
+                &:after {
+                    border-color: transparent transparent transparent #FF70E4;
+                }
+            }
+        }
+        &:nth-child(2) .is-child {
+            background: #F8FFDC;
+            transform: rotate(4deg);
+            &:after {
+                border-color: transparent transparent transparent #D5FF2C;
+            }
+        }
+        &:nth-child(3) {
+            top: 2rem;
+            .is-child {
+                background: #FFEAEA;
+                transform: rotate(6deg);
+                &:after {
+                    border-color: transparent transparent transparent #FF9D9D;
+                }
+            }
+        }
+    }
+
+    .tile.is-child {
+        position: relative;
+        text-align: center;
+        display: inline-block;
+        margin: 20px auto 10px;
+        filter: drop-shadow(10px 13px 5px #CECDCB);
+
+        &:after {
+            content: "";
+            display: block;
+            height: 0;
+            position: absolute;
+            margin: auto;
+            width: 0;
+            border-style: solid;
+            border-width: 25px 0 0 25px;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}

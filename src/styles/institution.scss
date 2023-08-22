@@ -1,10 +1,10 @@
-.body-container_course {
-    background: #FFEAEA80;
+.body-container_institution {
+    background: #F8FFDC80;
     margin: 5rem auto;
     padding: 6rem;
     border-radius: 50px;
 
-    .body-content_course {
+    .body-content_institution {
         .body-content_title {
             font-family: Roboto;
             font-size: 40px;
@@ -14,7 +14,7 @@
             text-align: left;
             
             font-family: Roboto;
-            font-size: 40px;
+            font-size: 20px;
             font-weight: 700;
             line-height: 60px;
             letter-spacing: 0.31em;
@@ -29,14 +29,6 @@
             letter-spacing: 0.25em;
             text-align: left;
             margin-bottom: 2rem; 
-        }
-        .button {
-            padding: 8px 28px 8px 28px;
-            border-radius: 100px;
-            border: 1px;
-            gap: 8px;
-            background: linear-gradient(99.05deg, #B82AD7 0.07%, #FF2A9B 106.32%);
-            color: #ffffff;
         }
     }
     .courses-slider {

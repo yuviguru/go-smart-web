@@ -8,6 +8,9 @@ const Contact = React.lazy(()=>import('../components/ContactSection'));
 const About = React.lazy(()=>import('../components/AboutSection'));
 const NavigationBar = React.lazy(()=>import('../components/NavigationBar'));
 const Courses = React.lazy(()=>import('../components/CourseSection'));
+const Engagements = React.lazy(()=>import('../components/EngagementSection'));
+const Institution = React.lazy(()=>import('../components/InstitutionSection'));
+const Testimonials = React.lazy(()=>import('../components/TestimonialSection'));
 
 const LazyComponent = ({ Component, ...props }) => (
   <React.Suspense fallback={'<p>Loading...</p>'}>
@@ -27,6 +30,9 @@ const IndexPage = () => {
       <Home />
       <About />
       <Courses />
+      <Engagements />
+      <Institution />
+      <Testimonials/>
       <Contact />
     </div>
   </div>

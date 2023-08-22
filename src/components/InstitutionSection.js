@@ -1,11 +1,11 @@
 import React from 'react';
-import "../styles/course.scss";
+import "../styles/institution.scss";
 import Card from "../components/ResuableElements/Card";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-export default function Course() {
+export default function Institution() {
   const settings = {
     dots: true,
     infinite: true,
@@ -18,18 +18,9 @@ export default function Course() {
   };
   return (
     
-    <section id="courses">
-      <div className='container is-fullhd body-container_course'>
+    <section id="institutions">
+      <div className='container is-fullhd body-container_institution'>
         <div className='columns'>
-          <div className='column is-half'>
-            <div className='body-content_course'>
-              <h1 className='body-content_title'>Our Courses</h1>
-              <p className='body-content_description'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              <button className='button is-normal is-responsive'>
-                Explore More
-              </button>          
-            </div>
-          </div>
           <div className='column is-half courses-slider'>
             <Slider {...settings}>
               <Card
@@ -63,6 +54,12 @@ export default function Course() {
                 description="This is the second tile."
               />
             </Slider>
+          </div>
+          <div className='column is-half'>
+            <div className='body-content_institution'>
+              <h1 className='body-content_title'>INSTITUTIONS THAT WORK WITH US</h1>
+              <p className='body-content_description'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>   
+            </div>
           </div>
         </div>
       </div>
