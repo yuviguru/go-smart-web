@@ -1,8 +1,8 @@
 import React from 'react';
 import "../styles/institution.scss";
 import Card from "../components/ResuableElements/Card";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.scss";
+import "slick-carousel/slick/slick-theme.scss";
 import Slider from "react-slick";
 
 export default function Institution() {
