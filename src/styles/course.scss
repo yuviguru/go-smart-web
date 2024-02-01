@@ -33,6 +33,40 @@
     }
     .courses-slider {
         align-self: center;
+        .tile.is-child {
+            border-radius: 0rem 1.5rem;
+            background: #ffffff;
+            .title {
+                color: #656565;
+                font-family: Roboto Condensed;
+                font-size: 1.25rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 180%; /* 2.25rem */
+                letter-spacing: 0.2625rem;
+            }
+            .subtitle {
+                color: #0F0707;
+                font-family: Work Sans;
+                font-size: 1.3rem;
+                font-style: normal;
+                font-weight: 600;
+                letter-spacing: 0.165rem;
+                padding: 20px 0 5px;
+            }
+            .view-details {
+                color: var(--heading, #0F0707);
+                font-family: Roboto;
+                font-size: 0.875rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 217.188%; /* 1.90038rem */
+                letter-spacing: 0.07rem;
+                text-decoration-line: underline;
+                display: flex;
+                justify-content: end;
+            }
+        }
     }
 }
 

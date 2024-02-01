@@ -30,7 +30,8 @@ const IndexPage = () => {
       <Home />
       <About />
       <Courses />
-      <Engagements />
+      <Engagements type="typeOne"/>
+      <Engagements type="typeTwo"/>
       <Institution />
       <Testimonials/>
       <Contact />

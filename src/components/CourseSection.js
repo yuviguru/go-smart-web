@@ -11,11 +11,16 @@ export default function Course() {
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     speed: 2000,
     autoplaySpeed: 3000,
     cssEase: "linear",
   };
+  const courseQuotes = {
+    english: ['“ Fluent', 'Conversations,', 'Confident', 'Connections “'],
+    maths: ['“ Equations', 'Resolved,', 'Futures', 'Evolved ”'],
+    writing: ['“ In The', 'Dance Of Ink,', 'Make Your', 'Mark ”']
+  }
   return (
     
     <section id="courses">
@@ -24,7 +29,7 @@ export default function Course() {
           <div className='column is-half'>
             <div className='body-content_course'>
               <h1 className='body-content_title'>Our Courses</h1>
-              <p className='body-content_description'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <p className='body-content_description'>"Unlock a world of possibilities with Go Smart's cutting-edge courses. From innovative tech exploration to creative arts immersion, our curated programs redefine education. Dive into a transformative learning experience, where expert guidance meets individual passion. Choose excellence, choose Go Smart – because education should inspire, not just instruct."</p>
               <button className='button is-normal is-responsive'>
                 Explore More
               </button>          
@@ -34,33 +39,18 @@ export default function Course() {
             <Slider {...settings}>
               <Card
                 imageUrl="https://placeimg.com/200/200/animals"
-                title="Tile 1"
-                description="This is the first tile."
+                title="SMART ENGLISH"
+                description={courseQuotes.english}
               />
               <Card
                 imageUrl="https://placeimg.com/200/200/nature"
-                title="Tile 2"
-                description="This is the second tile."
+                title="SMART MATHS"
+                description={courseQuotes.maths}
               />
               <Card
                 imageUrl="https://placeimg.com/200/200/nature"
-                title="Tile 3"
-                description="This is the second tile."
-              />
-              <Card
-                imageUrl="https://placeimg.com/200/200/nature"
-                title="Tile 4"
-                description="This is the second tile."
-              />
-              <Card
-                imageUrl="https://placeimg.com/200/200/nature"
-                title="Tile 5"
-                description="This is the second tile."
-              />
-              <Card
-                imageUrl="https://placeimg.com/200/200/nature"
-                title="Tile 6"
-                description="This is the second tile."
+                title="SMART WRITING"
+                description={courseQuotes.writing}
               />
             </Slider>
           </div>
