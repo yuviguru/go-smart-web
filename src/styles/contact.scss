@@ -5,7 +5,6 @@
     border-radius: 50px;
 
     .body-content_title {
-        font-family: Roboto;
         font-size: 24px;
         font-weight: 800;
         line-height: 60px;
@@ -14,11 +13,11 @@
         margin-bottom: 1rem;      
     }
     .body-content_description{
-        font-family: Work Sans;
         font-size: 12px;
         font-weight: 300;
         line-height: 26px;
-        letter-spacing: 0.25em;
+        letter-spacing: 0.1em;
+        word-spacing: 0.2em;
         text-align: left;
         margin-bottom: 1rem; 
     }

@@ -11,7 +11,7 @@ export default function Course() {
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     speed: 2000,
     autoplaySpeed: 3000,
     cssEase: "linear",

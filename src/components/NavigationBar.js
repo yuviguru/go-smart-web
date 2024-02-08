@@ -21,12 +21,12 @@ export default function NavigationBar() {
   
     <div id="navbarBasicExample" className={`navbar-menu ${showNavBurger ? 'is-active' : ''}`}>
       <div className="navbar-end">
-        <Link className="navbar-item" to="/">Home</Link>
-        <Link className="navbar-item" to="/about-us/">About</Link>
-        <Link className="navbar-item" to="/about-us/">Our Courses</Link>
-        <Link className="navbar-item" to="/about-us/">Gallery</Link>
-        <Link className="navbar-item" to="/about-us/">News and Events</Link>
-        <Link className="navbar-item" to="/contact/">Contact</Link>
+        <Link className="navbar-item" to="#home">Home</Link>
+        <Link className="navbar-item" to="#about">About</Link>
+        <Link className="navbar-item" to="#courses">Our Courses</Link>
+        <Link className="navbar-item" to="#engagements-typeOne">Our Engagements</Link>
+        {/* <Link className="navbar-item" to="/about-us/">News and Events</Link> */}
+        <Link className="navbar-item" to="#contact">Contact</Link>
       </div>
     </div>
   </nav>

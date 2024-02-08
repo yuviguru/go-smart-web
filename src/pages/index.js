@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "../styles/global.scss";
 import Home from "../components/HomeSection";
 import smoothscroll from "smoothscroll-polyfill";
+import "@fontsource/roboto";
 
 
 const Contact = React.lazy(()=>import('../components/ContactSection'));

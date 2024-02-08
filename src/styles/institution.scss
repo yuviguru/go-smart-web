@@ -6,14 +6,6 @@
 
     .body-content_institution {
         .body-content_title {
-            font-family: Roboto;
-            font-size: 40px;
-            font-weight: 800;
-            line-height: 60px;
-            letter-spacing: 0.31em;
-            text-align: left;
-            
-            font-family: Roboto;
             font-size: 20px;
             font-weight: 700;
             line-height: 60px;
@@ -22,11 +14,11 @@
             margin-bottom: 1rem;           
         }
         .body-content_description{
-            font-family: Work Sans;
             font-size: 13px;
             font-weight: 300;
             line-height: 26px;
-            letter-spacing: 0.25em;
+            letter-spacing: 0.1em;
+            word-spacing: 0.2em;
             text-align: left;
             margin-bottom: 2rem; 
         }

@@ -1,6 +1,7 @@
 import React from 'react';
 import "../styles/contact.scss";
 import { StaticImage } from "gatsby-plugin-image";
+import { Link } from "@reach/router";
 
 console.log('contact component');
 
@@ -16,11 +17,12 @@ export default function Contact() {
             <p className='body-content_description'>ADDRESS</p>
             <h2 className='body-content_title'>USEFUL LINKS</h2>
             <div className='is-flex use-full_links'>
-              <p className='body-content_description'>HOME</p>
-              <p className='body-content_description'>OUR COURSES</p>
-              <p className='body-content_description'>GALLERY</p>
-              <p className='body-content_description'>NEWS AND EVENTS</p>
-              <p className='body-content_description'>ABOUT</p>
+              <Link className="body-content_description" to="#home">HOME</Link>
+              <Link className="body-content_description" to="#about">ABOUT</Link>
+              <Link className="body-content_description" to="#courses">OUR COURSES</Link>
+              <Link className="body-content_description" to="#engagements-typeOne">OUR ENGAGEMENTS</Link>
+              {/* <Link className="navbar-item" to="/about-us/">News and Events</Link> */}
+              <Link className="body-content_description" to="#contact">CONTACT</Link>
             </div>
         </div>
         <div className='column is-two-fifths'>

@@ -12,6 +12,7 @@ $navbar-item-hover-color:  linear-gradient(108.54deg, #FF2A9B -12.56%, #B82AD7 1
 html,
 body {
   margin: 0;
+  font-family: "Roboto";
 //   overflow: hidden;
 @media screen and (min-width: 1024px) {
   padding: 0;
@@ -39,6 +40,7 @@ body {
     height: calc(100vh - 3.25rem);
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
     section {
       height: 100%;
       scroll-snap-align: start;
