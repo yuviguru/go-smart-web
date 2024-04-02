@@ -5,7 +5,6 @@ import smoothscroll from "smoothscroll-polyfill";
 import "@fontsource/roboto";
 import 'animate.css';
 import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 
 const Contact = React.lazy(()=>import('../components/ContactSection'));
 const About = React.lazy(()=>import('../components/AboutSection'));
@@ -20,12 +19,6 @@ const LazyComponent = ({ Component, ...props }) => (
     <Component {...props} />
   </React.Suspense>
 )
-
-const intersectionObserver = new IntersectionObserver((entries) => {
-  if (entries[0].intersectionRatio <= 0) return;
-
-  console.log("Loaded new items");
-});
 
 const IndexPage = () => {
   const myRef = useRef();
