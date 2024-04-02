@@ -8,7 +8,7 @@ console.log('contact component');
 export default function Contact() {
   return (
   <section id="contact">
-    <div className='container is-fullhd body-container_contact'>
+    <div className='body-container_contact'>
       <div className='columns'>
         <div className='column is-three-fifths'>
             <h1 className='body-content_title'>CONTACT US</h1>
@@ -19,8 +19,8 @@ export default function Contact() {
             <div className='is-flex use-full_links'>
               <Link className="body-content_description" to="#home">HOME</Link>
               <Link className="body-content_description" to="#about">ABOUT</Link>
-              <Link className="body-content_description" to="#courses">OUR COURSES</Link>
-              <Link className="body-content_description" to="#engagements-typeOne">OUR ENGAGEMENTS</Link>
+              <Link className="body-content_description" to="#courses">COURSES</Link>
+              <Link className="body-content_description" to="#engagements-typeOne">ENGAGEMENTS</Link>
               {/* <Link className="navbar-item" to="/about-us/">News and Events</Link> */}
               <Link className="body-content_description" to="#contact">CONTACT</Link>
             </div>

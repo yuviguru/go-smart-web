@@ -1,7 +1,7 @@
 .body-container_engagements {
     .image-background {
         box-shadow: 0px 4px 4px 0px #00000040;
-        background: #F5C6EC;
+        background: #E3E4FD;
         border-radius: 25px;
         height: 100%;
         min-height: 230px;
@@ -26,9 +26,87 @@
     .body-content_title {
         font-size: 22px;
         font-weight: 600;
-        line-height: 52px;
-        letter-spacing: 0.31em;
+        line-height: 30px;
+        letter-spacing: 0.25em;
         text-align: left;
         margin-bottom: 1rem;
+    }
+    /* Below 560 */
+    @media screen and (max-width: 559px) {
+        /* CSS rules for screens below 560px */
+        .columns {
+            margin: 0;
+        }
+        .body-content-main {
+            margin: 2rem;
+            background: #E3E4FD;
+            border-radius: 1rem;
+            padding: 2rem;
+        }
+    }
+    
+    /* Between 560 and 767 */
+    @media screen and (min-width: 560px) and (max-width: 768px) {
+        /* CSS rules for screens between 560px and 767px */
+        .columns {
+            margin: 0;
+        }
+        .body-content-main {
+            margin: 2rem;
+            background: #E3E4FD;
+            border-radius: 1rem;
+            padding: 2rem;
+        }
+    }
+    
+    /* Between 768 and 1024 */
+    @media screen and (min-width: 769px) and (max-width: 1023px) {
+        /* CSS rules for screens between 768px and 1024px */
+        
+        .columns {
+            margin: 0;
+        }
+        .body-content-main {
+            margin: 2rem;
+            background: #E3E4FD;
+            border-radius: 1rem;
+            padding: 2rem;
+        }
+    }
+    
+    /* Between 1024 and 1280 */
+    @media screen and (min-width: 1023px) and (max-width: 1279px) {
+        /* CSS rules for screens between 1024px and 1280px */
+        .columns{
+            margin: 0;
+            &:first-of-type {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+    
+    /* Above 1280 */
+    @media screen and (min-width: 1280px) {
+        /* CSS rules for screens above 1280px */
+        .columns:first-of-type {
+            margin-bottom: 6rem;
+        }
+    }
+}
+
+#engagements-typeTwo .body-container_engagements {
+    @media screen and (max-width: 1024px) {
+        /* CSS rules for screens below 768px */
+        margin-bottom: 4rem;
+        .engagement-title {
+            display: none;
+        }
+    }
+}
+
+#engagements-typeOne .body-container_engagements {
+    @media screen and (max-width: 1024px) {
+        /* CSS rules for screens below 768px */
+        margin-top: 4rem;
     }
 }

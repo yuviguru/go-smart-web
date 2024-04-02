@@ -13,23 +13,21 @@ html,
 body {
   margin: 0;
   font-family: "Roboto";
-//   overflow: hidden;
-@media screen and (min-width: 1024px) {
-  padding: 0;
-  height: 100%;
-  overflow: hidden;
-}
+  //   overflow: hidden;
+  @media screen and (min-width: 1024px) {
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
 }
 
 .page-container {
   section {
-    display: flex;
-    margin: auto;
-    flex-direction: column;
 
     .section-title {
       color: #000000;
       margin-bottom: 4rem;
+      padding-top: 1rem;
     }
     
     .sub-section-title {

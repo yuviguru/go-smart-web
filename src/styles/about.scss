@@ -1,5 +1,7 @@
 .body-container_about {
-    margin:  auto;
+    margin: 5rem;
+    position: relative;
+    height: 100%;
     
     .about-us-image {
         position: absolute;
@@ -8,10 +10,6 @@
 
     .tile {
         min-height: 65%;
-    }
-
-    .tile.is-horizontal {
-        padding: 0 6rem;
     }
 
     .tile.is-parent {
@@ -33,7 +31,8 @@
         text-align: center;
         display: inline-block;
         margin: 20px auto 10px;
-        
+        max-width: 380px;
+
         &:before,
         &:after {
           background: #656565BF;
@@ -60,6 +59,68 @@
         ul {
             text-align: left;
             line-height: 1.6rem;
+
+            li {
+                margin: 1rem 0;
+            }
+        }
+    }
+
+    @media screen and (max-width: 559px) {
+        /* CSS rules for screens below 559px */
+        margin: 4rem;
+        .tile.is-parent {
+            text-align: center;
+            padding: 0.75rem 0;
+        }
+        .tile.is-child {
+            width: 100%;
+        }
+    }
+
+    @media screen and (min-width: 560px) and (max-width: 768px) {
+        /* CSS rules for screens between 560px and 767px */
+        .tile.is-parent {
+            text-align: center;
+            padding: 0.75rem 5rem;
+        }
+        .tile.is-child {
+            width: 100%;
+        }
+    }
+    
+    /* Between 768 and 1024 */
+    @media screen and (min-width: 769px) and (max-width: 1023px) {
+        margin: 4rem 1.5rem;
+    /* CSS rules for screens between 768px and 1024px */
+        .tile.is-ancestor {
+            margin-right: 0;
+        }
+
+        .tile.is-parent {
+            padding: 0 0.5rem;
+        }
+        .sub-section-title {
+            margin-bottom: 1rem;
+        }
+    }
+    
+    /* Between 1024 and 1280 */
+    @media screen and (min-width: 1023px) and (max-width: 1279px) {
+    /* CSS rules for screens between 1024px and 1280px */
+        .tile.is-parent {
+            padding: 0 1rem;
+        }
+    }
+    
+    /* Above 1280 */
+    @media screen and (min-width: 1280px) {
+    /* CSS rules for screens above 1280px */
+        .tile.is-horizontal {
+            padding: 0 3rem;
+        }
+        .tile.is-parent {
+            padding: 0 2rem;
         }
     }
 }

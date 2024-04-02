@@ -1,9 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "../styles/global.scss";
 import Home from "../components/HomeSection";
 import smoothscroll from "smoothscroll-polyfill";
 import "@fontsource/roboto";
-
+import 'animate.css';
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Contact = React.lazy(()=>import('../components/ContactSection'));
 const About = React.lazy(()=>import('../components/AboutSection'));
@@ -19,12 +21,19 @@ const LazyComponent = ({ Component, ...props }) => (
   </React.Suspense>
 )
 
+const intersectionObserver = new IntersectionObserver((entries) => {
+  if (entries[0].intersectionRatio <= 0) return;
+
+  console.log("Loaded new items");
+});
 
 const IndexPage = () => {
+  const myRef = useRef();
   useEffect(() => {
     smoothscroll.polyfill();
+    console.log('myRef', myRef.current);
   }, []);
-  return (
+  return ( 
   <div className="body-container">
     <NavigationBar/>
     <div className="page-container">
@@ -33,8 +42,8 @@ const IndexPage = () => {
       <Courses />
       <Engagements type="typeOne"/>
       <Engagements type="typeTwo"/>
-      <Institution />
-      <Testimonials/>
+      {/* <Institution /> */}
+      {/* <Testimonials/> */}
       <Contact />
     </div>
   </div>

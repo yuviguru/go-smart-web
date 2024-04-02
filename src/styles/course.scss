@@ -1,8 +1,10 @@
 .body-container_course {
-    background: #FFEAEA80;
-    margin: 5rem auto;
+    background: rgb(255 234 234);
     padding: 6rem;
-    border-radius: 50px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     .body-content_course {
         .body-content_title {
@@ -64,6 +66,39 @@
                 justify-content: end;
             }
         }
+    }
+
+    /* Below 560 */
+    @media screen and (max-width: 559px) {
+        /* CSS rules for screens below 560px */
+        padding: 2rem;
+    }
+    
+    /* Between 560 and 767 */
+    @media screen and (min-width: 560px) and (max-width: 767px) {
+        /* CSS rules for screens between 560px and 767px */
+        padding: 3rem;
+    }
+    
+    /* Between 768 and 1024 */
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        /* CSS rules for screens between 768px and 1024px */
+        padding: 3rem;
+        .courses-slider {
+            .tile.is-parent {
+                padding: 0.5rem;
+            }
+        }
+    }
+    
+    /* Between 1024 and 1280 */
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        /* CSS rules for screens between 1024px and 1280px */
+    }
+    
+    /* Above 1280 */
+    @media screen and (min-width: 1280px) {
+        /* CSS rules for screens above 1280px */
     }
 }
 
