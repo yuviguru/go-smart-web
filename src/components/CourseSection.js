@@ -15,31 +15,7 @@ export default function Course() {
     autoplay: true,
     speed: 500,
     autoplaySpeed: 2000,
-    cssEase: "linear",
-    responsive: [
-      {
-        breakpoint: 1280,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 610,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false,
-        }
-      }
-    ]
+    cssEase: "linear"
   };
   const courseQuotes = {
     english: ['“ Fluent', 'Conversations,', 'Confident', 'Connections “'],
